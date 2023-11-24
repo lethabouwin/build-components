@@ -11,6 +11,28 @@
         --nissan-red: #BE0030;
     }
 
+    @font-face {
+        font-family: "Nissan Bold";
+        src: url("resources/fonts/Nissan\ Brand\ Bold.otf") format("opentype");
+    }
+
+    @font-face {
+        font-family: "Nissan Light";
+        src: url("resources/fonts/Nissan\ Brand\ Light.otf") format("opentype");
+    }
+
+    @font-face {
+        font-family: "Nissan Regular";
+        src: url("resources/fonts/Nissan\ Brand\ Regular.otf") format("opentype");
+    }
+
+    @font-face {
+        font-family: "Nissan Italic";
+        src: url("resources/fonts/Nissan\ Brand\ Italic.otf") format("opentype");
+    }
+        
+
+    
     a {
         text-decoration: none;
         color: inherit;
@@ -22,12 +44,14 @@
         top:0;
         width: 100%;
         z-index: 1;
+        
     }
 
     .top-nav-black {
         background-color: black;
         justify-content:flex-end;
         padding-right: 3rem;
+        font-family: 'Nissan Regular', sans-serif;
     }
 
     .top-nav-text {
@@ -37,6 +61,7 @@
     .bottom-nav-white {
         border-bottom: 2px solid black;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+        font-family: 'Nissan Light', sans-serif;
     }
 
     .custom-text-black {
@@ -44,6 +69,11 @@
         font-size: 12px;
         text-transform: uppercase;
         letter-spacing: 1px;
+    }
+
+    .nav-hover:hover {
+        color: white;
+        background-color: var(--nissan-red);
     }
 
     
@@ -97,36 +127,52 @@
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon custom-nav-icon custom-color-icon"></span>
                 </button>
-        
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav gap-4">
-                        <li class="nav-item">
-                            <a class="nav-link custom-text-black">Warriors Rules</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link custom-text-black dropdown-toggle nav-hover" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Warriors Rules
+                            </a>
+                            
+                            <!-- Dropdown menu -->
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item custom-text-black border-bottom nav-hover" href="#">Warrior Rewards Rules</a>
+                                <a class="dropdown-item custom-text-black border-bottom nav-hover" href="#">Warrior Aftersales Rules</a>
+                                <a class="dropdown-item custom-text-black nav-hover" href="#">Warrior Champs Rules</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link custom-text-black dropdown-toggle nav-hover" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Cards
+                            </a>
+                            
+                            <!-- Dropdown menu -->
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item custom-text-black border-bottom nav-hover" href="#">View Cards</a>
+                                <a class="dropdown-item custom-text-black nav-hover" href="#">Activate A Card</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a class="nav-link custom-text-black nav-hover" href="">Statements</a>
                         </li>
                         <li>
-                            <a class="nav-link custom-text-black">Cards</a>
+                            <a class="nav-link custom-text-black nav-hover" href="">Rewards Table</a>
                         </li>
-    
                         <li>
-                            <a class="nav-link custom-text-black" href="">Statements</a>
+                            <a class="nav-link custom-text-black nav-hover" href="">Claim Sale</a>
                         </li>
-    
                         <li>
-                            <a class="nav-link custom-text-black" href="">Rewards Table</a>
+                            <a class="nav-link custom-text-black nav-hover" href="">General Queries</a>
                         </li>
-    
-                        <li>
-                            <a class="nav-link custom-text-black" href="">Claim Sale</a>
-                        </li>
-    
-                        <li>
-                            <a class="nav-link custom-text-black" href="">General Queries</a>
-                        </li>
-                        <!-- Other nav items -->
                     </ul>
                 </div>
             </div>
         </nav>
+        
     </div>
     
     
