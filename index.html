@@ -14,6 +14,7 @@
     a {
         text-decoration: none;
         color: inherit;
+    
     }
 
     .top-navs {
@@ -25,11 +26,24 @@
 
     .top-nav-black {
         background-color: black;
+        justify-content:flex-end;
+        padding-right: 3rem;
+    }
+
+    .top-nav-text {
+        color: white;
     }
 
     .bottom-nav-white {
         border-bottom: 2px solid black;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .custom-text-black {
+        color: black;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 
     
@@ -39,16 +53,38 @@
         color: white;
     }
 
+    /* media queries for mobile */
+    @media screen and (max-width: 768px) {
+        .top-nav-black{
+            justify-content: space-between;
+            padding-right: 2rem;
+            padding-left: 1rem;
+        }
+
+        .custom-nav-icon {
+            color: yellow;
+        }
+
+        .custom-nav-icon::before {
+            content: '';
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            background-image: url("data:image/svg+xml,%3csvg fill='black' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath d='M4 7h22v2H4zm0 6h22v2H4zm0 6h22v2H4z'/%3e%3c/svg%3e");
+        }
+    }
+ 
+
 </style>
 
 <body>
     <div class="top-navs">
-        <ul class="nav top-nav-black d-flex justify-content-around lg:justify-content-center">
-            <li class="nav-item">
-            <a class="nav-link" href="#">Tax Certificate</a>
+        <ul class="nav top-nav-black d-flex lg:justify-content-center">
+            <li class="nav-item ">
+            <a class="nav-link text-white" href="#">Tax Certificate</a>
             </li>
             <li class="nav-item red-button">
-            <a class="nav-link" href="#">LOG OUT</a>
+            <a class="nav-link text-white" href="#">LOG OUT</a>
             </li>
         </ul>
 
@@ -59,10 +95,36 @@
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon custom-color-icon"></span>
+                    <span class="navbar-toggler-icon custom-nav-icon custom-color-icon"></span>
                 </button>
         
-                <!-- Your collapsible content here -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link custom-text-black">Warriors Rules</a>
+                        </li>
+                        <li>
+                            <a class="nav-link custom-text-black">Cards</a>
+                        </li>
+    
+                        <li>
+                            <a class="nav-link custom-text-black" href="">Statements</a>
+                        </li>
+    
+                        <li>
+                            <a class="nav-link custom-text-black" href="">Rewards Table</a>
+                        </li>
+    
+                        <li>
+                            <a class="nav-link custom-text-black" href="">Claim Sale</a>
+                        </li>
+    
+                        <li>
+                            <a class="nav-link custom-text-black" href="">General Queries</a>
+                        </li>
+                        <!-- Other nav items -->
+                    </ul>
+                </div>
             </div>
         </nav>
     </div>
