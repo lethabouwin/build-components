@@ -1,4 +1,4 @@
-<html lang="en">
+<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
 <style>
     * {
         --nissan-red: #BE0030;
+        --nissan-grey-dark: #1A1A1A; 
     }
 
     @font-face {
@@ -78,6 +79,12 @@
         background-color: var(--nissan-red);
     }
 
+    .custom-footer {
+        background-color: var(--nissan-grey-dark);
+        color: white;
+        font-family: 'Nissan Regular', sans-serif;
+        font-size: 12px;
+    }
     
 
     .red-button {
@@ -174,7 +181,65 @@
         </nav>
         
     </div>
-    
+
+    <div class="blockcode mt-5">
+        <div class="header">Footer</div>
+      
+        <footer class="page-footer shadow">
+          <div class="d-flex flex-column mx-auto py-5" style="width: 80%">
+            <div class="d-flex flex-wrap justify-content-between">
+              <div class="align-self-center">
+
+              </div>
+              <div>
+                <p class="h5 mb-4" style="font-weight: 600">Quick Links</p>
+                <ul class="p-0" style="list-style: none; cursor: pointer">
+                  <li class="my-2">
+                    <a class="text-dark" href="/">Home</a>
+                  </li>
+                  <li class="my-2">
+                    <a class="text-dark" href="/">My Details</a>
+                  </li>
+                  <li class="my-2">
+                    <a class="text-dark" href="/">Activate Card</a>
+                  </li>
+                  <li class="my-2">
+                    <a class="text-dark" href="/">Statements</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <p class="h5 mb-4" style="font-weight: 600">Updates</p>
+                <ul class="p-0" style="list-style: none; cursor: pointer">
+                  <li class="my-2">
+                    <a class="text-dark" href="/">Sales Capturing</a>
+                  </li>
+                  <li class="my-2">
+                    <a class="text-dark" href="/">Nissan Warrior Champs</a>
+                  </li>
+                  <li class="my-2">
+                    <a class="text-dark" href="/">Magnite Maller</a>
+                  </li>
+                  <li class="my-2">
+                    <a class="text-dark" href="/">Nissan Social Media Playbook</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <p class="h5 mb-4" style="font-weight: 600">Latest Video</p>
+                <ul class="p-0" style="list-style: none; cursor: pointer">
+                  <li class="my-2">
+                    <a class="text-dark" href="/">Warrior Trip</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <small class="text-center mt-5">&copy; Devwares, 2020. All rights reserved.</small>
+          </div>
+        </footer>
+      </div>
     
 </body>
 
