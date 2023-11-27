@@ -73,6 +73,29 @@ a {
     letter-spacing: 1px;
 }
 
+.header {
+    position: relative; 
+    z-index: -1;
+}
+
+.custom-header-text {
+    position: absolute; 
+    bottom: 60%; 
+    left: 40px; 
+    color: white; 
+    margin-top: 50%;
+    font-family: 'Nissan Light', sans-serif;
+}
+
+.custom-header-text-1 {
+    font-size: 45px;
+}
+
+.custom-header-text-2 {
+    font-size: 20px;
+    width: 45%;
+}
+
 .custom-text-input {
   font-size: 12px;
 }
@@ -173,5 +196,25 @@ a {
 
     .custom-bg-red {
         margin: 0%;
+    }
+
+    .header {
+        padding-top: 25%;
+    }
+
+    .custom-header-text {
+        position: absolute; 
+        bottom: 20%; 
+        left: 40px; 
+        margin-top: 50%;
+    }
+
+    .custom-header-text-1 {
+        font-size: 20px;
+    }
+
+    .custom-header-text-2 {
+        font-size: 12px;
+        width: 90%;
     }
 }
