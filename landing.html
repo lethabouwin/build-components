@@ -11,11 +11,13 @@
         display: flex;
         flex-direction: column;
         min-height: 100vh;
+        font-family: 'Nissan Regular', sans-serif;
     }
 
     * {
         --nissan-red: #BE0030;
         --nissan-grey-dark: #1A1A1A; 
+        --nissan-grey-light: #E6E6E6;
     }
 
     @font-face {
@@ -89,6 +91,22 @@
         background-color: var(--nissan-red);
     }
 
+    .custom-bg-light-grey {
+        background-color: var(--nissan-grey-light);
+    }
+
+    .custom-bg-red {
+        background-color: var(--nissan-red);
+    }
+
+    .custom-offers-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
     .custom-footer {
         background-color: var(--nissan-grey-dark);
         color: white;
@@ -119,6 +137,18 @@
             height: 1.5em;
             background-image: url("data:image/svg+xml,%3csvg fill='black' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath d='M4 7h22v2H4zm0 6h22v2H4zm0 6h22v2H4z'/%3e%3c/svg%3e");
         }
+
+        .custom-offers-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .custom-bg-red {
+            margin: 0%;
+        }
     }
  
 
@@ -127,7 +157,7 @@
 <body>
     <!-- start Nav bars -->
     <div class="">
-        <div class="top-navs">
+        <div class="">
             <ul class=" nav top-nav-black d-flex lg:justify-content-center">
                 <li class="nav-item ">
                 <a class="nav-link text-white" href="#">Tax Certificate</a>
@@ -197,6 +227,27 @@
             <div class="d-flex justify-content-center ">
                 <img src="assets/NissanMagnite_header_white.png" alt="Nissan Magnite header white" width="100%">
             </div>  
+
+            <div class="custom-offers-container">
+                <div class="d-flex flex-column justify-content-center m-4 px-4 py-5 custom-bg-light-grey">
+                    <p class="fw-bolder">Nissan Aftersales Offers</p>
+                    <p class="custom-text-input">Lorem ipsum dolor sit amet consectetur. Odio commodo lorem volutpat ac egestas eu fermentum pulvinar. Varius a fringilla sed magna eleifend. Turpis at adipiscing eu in dolor. Tempor vitae elementum tortor et dapibus convallis. Nulla arcu metus nulla amet lacus morbi. </p>
+                </div>
+
+                <div class="d-flex flex-column justify-content-center  mx-4 px-4 py-5 custom-bg-red text-white">
+                    <p class="fw-bolder">Nissan Aftersales Offers</p>
+                    <p class="custom-text-input ">Lorem ipsum dolor sit amet consectetur. Odio commodo lorem volutpat ac egestas eu fermentum pulvinar. Varius a fringilla sed magna eleifend. Turpis at adipiscing eu in dolor. Tempor vitae elementum tortor et dapibus convallis. Nulla arcu metus nulla amet lacus morbi. </p>
+                </div>
+
+                <div class="d-flex flex-column justify-content-center m-4 px-4 py-5 custom-bg-light-grey">
+                    <p class="fw-bolder">Nissan Aftersales Offers</p>
+                    <p class="custom-text-input">Lorem ipsum dolor sit amet consectetur. Odio commodo lorem volutpat ac egestas eu fermentum pulvinar. Varius a fringilla sed magna eleifend. Turpis at adipiscing eu in dolor. Tempor vitae elementum tortor et dapibus convallis. Nulla arcu metus nulla amet lacus morbi. </p>
+                </div>
+
+
+            </div>
+
+
 
             <!-- end body -->
 
