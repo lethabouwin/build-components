@@ -113,6 +113,11 @@ a {
     background-color: var(--nissan-red);
 }
 
+.custom-body-text {
+    font-family: 'Nissan Regular', sans-serif;
+    font-size: 14px;
+}
+
 .custom-offers-container {
     display: flex;
     flex-direction: row;
