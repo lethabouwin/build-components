@@ -87,6 +87,11 @@ a {
     font-family: 'Nissan Light', sans-serif;
 }
 
+.custom-table {
+    font-family: 'Nissan Regular', sans-serif;
+    font-size: 14px;
+}
+
 .custom-header-text-1 {
     font-size: 45px;
 }
@@ -216,6 +221,10 @@ a {
     .custom-header-text-2 {
         font-size: 12px;
         width: 90%;
+    }
+
+    .custom-table {
+        font-size: 11px;
     }
 }
 
