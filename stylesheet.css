@@ -1,0 +1,177 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Nissan Regular', sans-serif;
+}
+
+* {
+    --nissan-red: #BE0030;
+    --nissan-grey-dark: #1A1A1A; 
+    --nissan-grey-light: #E6E6E6;
+}
+
+@font-face {
+    font-family: "Nissan Bold";
+    src: url("resources/fonts/Nissan\ Brand\ Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Nissan Light";
+    src: url("resources/fonts/Nissan\ Brand\ Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Nissan Regular";
+    src: url("resources/fonts/Nissan\ Brand\ Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Nissan Italic";
+    src: url("resources/fonts/Nissan\ Brand\ Italic.otf") format("opentype");
+}
+    
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.top-navs {
+    position:fixed;
+    top:0;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+.top-nav-black {
+    background-color: black;
+    justify-content:flex-end;
+    padding-right: 3rem;
+    font-family: 'Nissan Regular', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+.nav-select:active {
+    color: var(--nissan-red);
+}
+
+.bottom-nav-white {
+    border-bottom: 2px solid black;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+    font-family: 'Nissan Light', sans-serif;
+}
+
+.custom-text-black {
+    color: black;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.custom-text-input {
+  font-size: 12px;
+}
+
+.nav-hover:hover {
+    color: white;
+    background-color: var(--nissan-red);
+}
+
+.custom-bg-light-grey {
+    background-color: var(--nissan-grey-light);
+}
+
+.custom-bg-red {
+    background-color: var(--nissan-red);
+}
+
+.custom-offers-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.custom-offers-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.steering-image {
+    display: block;
+    display: flex;
+    width: 100%;
+    
+
+    
+}
+
+.custom-footer {
+    background-color: var(--nissan-grey-dark);
+    color: white;
+    font-family: 'Nissan Light', sans-serif;
+    font-size: 12px;
+}
+
+.offers-footer-text {
+    padding-left: 0rem;
+}
+
+
+.red-button {
+    background-color: var(--nissan-red);
+    color: white;
+}
+
+/* media queries for mobile */
+@media screen and (max-width: 768px) {
+    .top-nav-black{
+        justify-content: space-between;
+        padding-right: 2rem;
+        padding-left: 1rem;
+    }
+
+
+
+    .custom-nav-icon::before {
+        content: '';
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        background-image: url("data:image/svg+xml,%3csvg fill='black' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath d='M4 7h22v2H4zm0 6h22v2H4zm0 6h22v2H4z'/%3e%3c/svg%3e");
+    }
+
+    .custom-offers-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .custom-offers-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .offers-footer-text {
+        padding-left: 15%;
+    }
+
+    .steering-image {
+        display: none;
+    }
+
+    .custom-bg-red {
+        margin: 0%;
+    }
+}
