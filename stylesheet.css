@@ -80,7 +80,7 @@ a {
 
 .custom-header-text {
     position: absolute; 
-    bottom: 60%; 
+    bottom: 48%; 
     left: 40px; 
     color: white; 
     margin-top: 50%;
@@ -97,7 +97,7 @@ a {
 }
 
 .custom-text-input {
-  font-size: 12px;
+    font-size: 12px;
 }
 
 .nav-hover:hover {
@@ -130,10 +130,7 @@ a {
 .steering-image {
     display: block;
     display: flex;
-    width: 100%;
-    
-
-    
+    width: 100%;   
 }
 
 .custom-footer {
@@ -160,8 +157,6 @@ a {
         padding-right: 2rem;
         padding-left: 1rem;
     }
-
-
 
     .custom-nav-icon::before {
         content: '';
@@ -199,7 +194,7 @@ a {
     }
 
     .header {
-        padding-top: 25%;
+        padding-top: 19%;
     }
 
     .custom-header-text {
@@ -216,5 +211,28 @@ a {
     .custom-header-text-2 {
         font-size: 12px;
         width: 90%;
+    }
+}
+
+/* media queries from 769px to 980 */
+@media screen and (min-width: 769px) and (max-width: 980px) {
+    .header {
+        padding-top: 0%;
+    }
+
+    .custom-header-text {
+        position: absolute; 
+        bottom: 30%; 
+        left: 40px; 
+        margin-top: 50%;
+    }
+
+    .custom-header-text-1 {
+        font-size: 40px;
+    }
+
+    .custom-header-text-2 {
+        font-size: 15px;
+        width: 50%;
     }
 }
